@@ -32,19 +32,19 @@ const Contact = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Phone',
-      details: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      details: '+91 8328497607',
+      link: 'tel:+918328497607'
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      details: 'info@webhostdevs.com',
-      link: 'mailto:info@webhostdevs.com'
+      details: 'sohailmudabbir@gmail.com',
+      link: 'mailto:sohailmudabbir@gmail.com'
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Office',
-      details: '123 Web Street, Developer City, 12345',
+      details: 'Hyderabad',
       link: '#'
     },
     {
