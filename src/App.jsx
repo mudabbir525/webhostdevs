@@ -5,7 +5,7 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Home from './components/HomePage';
 import About from './components/About';
-import Services from './components/services';
+import Services from './components/Services';
 import Projects from './components/Projects';
 import InteractiveBackground from './components/InteractiveBackground';
 import Contact from './components/Contact';
