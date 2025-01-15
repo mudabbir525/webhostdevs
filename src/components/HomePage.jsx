@@ -1,40 +1,50 @@
-import React from 'react';
-import HeroSection from '../components/HeroSection';
-import { motion } from 'framer-motion';
-import { Code, Smartphone, Search, ShoppingCart, Server, Settings } from 'lucide-react';
+import React from "react";
+import HeroSection from "../components/HeroSection";
+import { motion } from "framer-motion";
+import {
+  Code,
+  Smartphone,
+  Search,
+  ShoppingCart,
+  Server,
+  Settings,
+} from "lucide-react";
 
 const HomePage = () => {
   const features = [
     {
       icon: <Code className="w-6 h-6" />,
-      title: 'Web Development',
-      description: 'Building responsive and dynamic websites tailored to your needs.'
+      title: "Web Development",
+      description:
+        "Building responsive and dynamic websites tailored to your needs.",
     },
     {
       icon: <Smartphone className="w-6 h-6" />,
-      title: 'Mobile App Development',
-      description: 'Creating seamless experiences for iOS and Android platforms.'
+      title: "Mobile App Development",
+      description:
+        "Creating seamless experiences for iOS and Android platforms.",
     },
     {
       icon: <Search className="w-6 h-6" />,
-      title: 'SEO Optimization',
-      description: 'Improving your website visibility on search engines.'
+      title: "SEO Optimization",
+      description: "Improving your website visibility on search engines.",
     },
     {
       icon: <ShoppingCart className="w-6 h-6" />,
-      title: 'E-commerce Solutions',
-      description: 'Building scalable online stores with secure payment systems.'
+      title: "E-commerce Solutions",
+      description:
+        "Building scalable online stores with secure payment systems.",
     },
     {
       icon: <Server className="w-6 h-6" />,
-      title: 'Backend Development',
-      description: 'Robust server-side solutions and database management.'
+      title: "Backend Development",
+      description: "Robust server-side solutions and database management.",
     },
     {
       icon: <Settings className="w-6 h-6" />,
-      title: 'API Integration',
-      description: 'Seamless integration of third-party services and APIs.'
-    }
+      title: "API Integration",
+      description: "Seamless integration of third-party services and APIs.",
+    },
   ];
 
   const containerVariants = {
@@ -42,27 +52,27 @@ const HomePage = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
     visible: {
       y: 0,
-      opacity: 1
-    }
+      opacity: 1,
+    },
   };
 
   return (
     <div className="min-h-screen">
       <HeroSection />
-      
+
       {/* Featured Services Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -76,7 +86,7 @@ const HomePage = () => {
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
@@ -107,7 +117,7 @@ const HomePage = () => {
       </section>
 
       {/* Stats Section */}
-      <motion.section 
+      <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -116,16 +126,16 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="text-white">
-              <div className="text-4xl font-bold mb-2">40+</div>
+              <div className="text-4xl font-bold mb-2">10+</div>
               <div className="text-blue-100">Projects Completed</div>
             </div>
             <div className="text-white">
-              <div className="text-4xl font-bold mb-2">30+</div>
+              <div className="text-4xl font-bold mb-2">10+</div>
               <div className="text-blue-100">Happy Clients</div>
             </div>
             <div className="text-white">
-              <div className="text-4xl font-bold mb-2">2+</div>
-              <div className="text-blue-100">Years Experience</div>
+              <div className="text-4xl font-bold mb-2">24+</div>
+              <div className="text-blue-100">Months Experience</div>
             </div>
             <div className="text-white">
               <div className="text-4xl font-bold mb-2">24/7</div>
@@ -146,13 +156,15 @@ const HomePage = () => {
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl mb-8">
               Ready to Start Your Project?
             </h2>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors duration-200"
-            >
-              Get in Touch
-            </motion.button>
+            <motion.a href="/contact">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors duration-200"
+              >
+                Get in Touch
+              </motion.button>
+            </motion.a>
           </motion.div>
         </div>
       </section>

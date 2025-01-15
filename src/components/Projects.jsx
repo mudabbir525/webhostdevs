@@ -1,63 +1,89 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
+import ms from '../assets/ms.png'
+import ams from '../assets/ams.png'
+import lb from '../assets/lb.png'
+import suhas from '../assets/suhas.png'
+import marichi from '../assets/marichi.png'
+import slot from '../assets/slotbook.png'
+import bmc from '../assets/bmc.png'
+import invent from '../assets/invent.png'
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
 
   const projects = [
     {
-      title: 'E-commerce Platform',
+      title: 'Mahaspice',
       category: 'web',
-      image: '/api/placeholder/600/400',
-      description: 'A full-featured e-commerce platform with payment integration',
-      technologies: ['React', 'Node.js', 'MongoDB'],
-      link: '#',
+      image: ms,
+      description: 'Mahaspice is a food delivery platform offering diverse menus, secure payment options, and real-time order updates through an integrated message gateway for a seamless user experience.',
+      technologies: ['React', 'Php', 'TailwindCSS', 'SQL', 'Razor Pay'],
+      link: 'https://www.mahaspice.in',
       github: '#'
     },
     {
-      title: 'Healthcare Dashboard',
+      title: 'Admin Panel',
       category: 'dashboard',
-      image: '/api/placeholder/600/400',
-      description: 'Analytics dashboard for healthcare providers',
-      technologies: ['React', 'D3.js', 'Firebase'],
-      link: '#',
+      image: ams,
+      description: 'The Mahaspice admin panel is a powerful dashboard for managing orders, menus, payments, and customer interactions efficiently in real time.',
+      technologies: ['React', 'Php', 'TailwindCSS'],
+      link: 'https://adminms.desoftimp.com/dashboard',
       github: '#'
     },
     {
-      title: 'Restaurant App',
-      category: 'mobile',
-      image: '/api/placeholder/600/400',
-      description: 'Mobile app for restaurant ordering and reservations',
-      technologies: ['React Native', 'Express', 'PostgreSQL'],
-      link: '#',
+      title: 'Book My Cater',
+      category: 'web',
+      image: bmc,
+      description: 'Book My Caterer is a comprehensive platform for discovering, comparing, and booking catering services, complete with detailed vendor profiles and seamless user interaction.',
+      technologies: ['React', 'PHP', 'TailwindCSS'],
+      link: 'https://book-my-cater.vercel.app',
+      github: '#'
+    },
+    {
+      title: 'Labneh',
+      category: 'web',
+      image: lb,
+      description: 'Labneh: A responsive food restaurant website built using ReactJS, Bootstrap, and APIs for seamless user experience.',
+      technologies: ['React', 'TailwindCSS'],
+      link: 'https://labneh.in',
       github: '#'
     },
     {
       title: 'Real Estate Website',
       category: 'web',
-      image: '/api/placeholder/600/400',
+      image: suhas,
       description: 'Property listing and management platform',
-      technologies: ['Next.js', 'Tailwind CSS', 'Strapi'],
-      link: '#',
+      technologies: ['Next.js', 'Tailwind CSS', 'React'],
+      link: 'https://suhas-constructions.vercel.app',
       github: '#'
     },
     {
-      title: 'Fitness Tracker',
-      category: 'mobile',
-      image: '/api/placeholder/600/400',
-      description: 'Mobile app for tracking workouts and nutrition',
-      technologies: ['React Native', 'TypeScript', 'Redux'],
-      link: '#',
+      title: 'Marichi Ventures',
+      category: 'web',
+      image: marichi,
+      description: 'Marichi Ventures: A dynamic website showcasing their business services, built with a focus on modern design, responsiveness, and user engagement, developed by WebHostDevs.',
+      technologies: ['React', 'TailwindCSS', 'PHP', 'SQL', 'EmailJS'],
+      link: 'https://marichiventures.com',
       github: '#'
     },
     {
-      title: 'Analytics Platform',
-      category: 'dashboard',
-      image: '/api/placeholder/600/400',
-      description: 'Business intelligence and analytics dashboard',
-      technologies: ['Vue.js', 'Python', 'AWS'],
-      link: '#',
+      title: 'Slot Booking',
+      category: 'web',
+      image: slot,
+      description: 'The slot booking website is a user-friendly platform for selecting, managing, and confirming time slots for events or services with real-time availability updates.',
+      technologies: ['HTML', 'CSS', 'SQL' , 'PHP'],
+      link: 'https://siddeshbooking.freewebhostmost.com',
+      github: '#'
+    },
+    {
+      title: 'Inventoy Management',
+      category: 'web',
+      image: invent,
+      description: 'The inventory management system is a streamlined platform for tracking, organizing, and managing stock levels, orders, and deliveries efficiently.',
+      technologies: ['HTML', 'CSS', 'SQL' , 'PHP'],
+      link: 'https://siddeshbooking.freewebhostmost.com',
       github: '#'
     }
   ];
@@ -65,7 +91,7 @@ const Projects = () => {
   const categories = [
     { id: 'all', label: 'All Projects' },
     { id: 'web', label: 'Web Apps' },
-    { id: 'mobile', label: 'Mobile Apps' },
+    // { id: 'mobile', label: 'Mobile Apps' },
     { id: 'dashboard', label: 'Dashboards' }
   ];
 

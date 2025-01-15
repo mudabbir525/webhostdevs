@@ -14,10 +14,26 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Here you would typically handle the form submission
-    await new Promise(resolve => setTimeout(resolve, 1000)); // Simulated delay
+
+    // Format the message for WhatsApp
+    const whatsappMessage = `
+Name: ${formData.name}
+Email: ${formData.email}
+Subject: ${formData.subject}
+Message: ${formData.message}
+    `.trim();
+
+    // Your WhatsApp number - replace with your actual number
+    const phoneNumber = '917288041656'; // Format: Country code + number without +
+
+    // Create WhatsApp URL with encoded message
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(whatsappMessage)}`;
+
+    // Open WhatsApp in a new tab
+    window.open(whatsappUrl, '_blank');
+
+    // Reset form and submission state
     setIsSubmitting(false);
-    // Reset form
     setFormData({ name: '', email: '', subject: '', message: '' });
   };
 
@@ -182,7 +198,7 @@ const Contact = () => {
                     ? 'bg-gray-400 cursor-not-allowed' 
                     : 'bg-blue-600 hover:bg-blue-700'}`}
               >
-                {isSubmitting ? 'Sending...' : 'Send Message'}
+                {isSubmitting ? 'Opening WhatsApp...' : 'Send Message via WhatsApp'}
               </motion.button>
             </motion.form>
           </div>
