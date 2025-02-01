@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Terminal, Code2, Brackets, Database } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   const codeSnippets = [
@@ -117,6 +118,7 @@ const HeroSection = () => {
             </motion.p>
             
             <motion.div variants={item} className="flex flex-wrap gap-4">
+            <Link to="/contact">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -124,6 +126,8 @@ const HeroSection = () => {
               >
                 Start Project
               </motion.button>
+              </Link>
+              <Link to="/projects">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -131,6 +135,7 @@ const HeroSection = () => {
               >
                 View Our Work
               </motion.button>
+              </Link>
             </motion.div>
           </motion.div>
 

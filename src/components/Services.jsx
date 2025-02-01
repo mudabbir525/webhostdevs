@@ -75,7 +75,7 @@ const Services = () => {
   const plans = [
     {
       name: "Basic",
-      price: "999",
+      price: "13,000",
       features: [
         "5 Pages Website",
         "Basic SEO",
@@ -87,7 +87,7 @@ const Services = () => {
     },
     {
       name: "Professional",
-      price: "1999",
+      price: "35,000",
       features: [
         "10 Pages Website",
         "Advanced SEO",
@@ -211,9 +211,9 @@ const Services = () => {
                   {plan.name}
                 </h3>
                 <div className="mt-4 flex items-baseline">
-                  <span className="text-4xl font-bold text-gray-900 dark:text-white">
-                    ${plan.price}
-                  </span>
+                <span className="text-4xl font-bold text-gray-900 dark:text-white">
+                  ₹{plan.price}
+                </span>
                   {plan.price !== "Custom" && (
                     <span className="ml-1 text-gray-600 dark:text-gray-300">/project</span>
                   )}

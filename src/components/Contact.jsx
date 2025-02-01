@@ -17,10 +17,10 @@ const Contact = () => {
 
     // Format the message for WhatsApp
     const whatsappMessage = `
-Name: ${formData.name}
-Email: ${formData.email}
-Subject: ${formData.subject}
-Message: ${formData.message}
+    Name: ${formData.name}
+    Email: ${formData.email}
+    Subject: ${formData.subject}
+    Message: ${formData.message}
     `.trim();
 
     // Your WhatsApp number - replace with your actual number
@@ -54,7 +54,7 @@ Message: ${formData.message}
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      details: 'sohailmudabbir@gmail.com',
+      details: 'info@webhostdevs.com',
       link: 'mailto:sohailmudabbir@gmail.com'
     },
     {
@@ -62,13 +62,14 @@ Message: ${formData.message}
       title: 'Office',
       details: 'Hyderabad',
       link: '#'
-    },
-    {
-      icon: <MessageCircle className="w-6 h-6" />,
-      title: 'Social',
-      details: '@webhostdevs',
-      link: '#'
-    }
+     }
+     //,
+    // {
+    //   icon: <MessageCircle className="w-6 h-6" />,
+    //   title: 'Social',
+    //   details: '@webhostdevs',
+    //   link: '#'
+    // }
   ];
 
   return (
