@@ -8,6 +8,7 @@ import suhas from '../assets/suhas.png'
 import marichi from '../assets/marichi.png'
 import slot from '../assets/slotbook.png'
 import bmc from '../assets/bmc.png'
+import dlvb from '../assets/dlvb.png'
 import invent from '../assets/invent.png'
 
 const Projects = () => {
@@ -32,28 +33,22 @@ const Projects = () => {
       link: 'projects/confidential',
       
     },
-    {
-      title: 'Book My Cater',
-      category: 'web',
-      image: bmc,
-      description: 'Book My Caterer is a comprehensive platform for discovering, comparing, and booking catering services, complete with detailed vendor profiles and seamless user interaction.',
-      technologies: ['React', 'PHP', 'TailwindCSS'],
-      link: 'https://book-my-cater.vercel.app',
-    },
+
+
     {
       title: 'Labneh',
       category: 'web',
       image: lb,
-      description: 'Labneh: A responsive food restaurant website built using ReactJS, Bootstrap, and APIs for seamless user experience.',
+      description: 'Developed a responsive website for a food restaurant using ReactJS, Bootstrap, and APIs, delivering a seamless and engaging user experience.',
       technologies: ['React', 'TailwindCSS'],
       link: 'https://labneh.in',
       github: '#'
     },
     {
-      title: 'Real Estate Website',
+      title: 'DLVB IMPLEX PVT LTD',
       category: 'web',
-      image: suhas,
-      description: 'Property listing and management platform',
+      image: dlvb,
+      description: 'Designed and developed a professional website for DLVB IMPEX PVT. LTD., a healthcare pioneer committed to innovation, compassionate care, and empowering communities.',
       technologies: ['Next.js', 'Tailwind CSS', 'React'],
       link: 'https://suhas-constructions.vercel.app',
       github: '#'
@@ -67,14 +62,26 @@ const Projects = () => {
       link: 'https://marichiventures.com',
       github: '#'
     },
+
     {
+      title: 'Book My Cater',
+      category: 'web',
+      image: bmc,
+      description: 'Book My Caterer is a comprehensive platform for discovering, comparing, and booking catering services, complete with detailed vendor profiles and seamless user interaction.',
+      technologies: ['React', 'PHP', 'TailwindCSS'],
+      link: 'https://book-my-cater.vercel.app',
+    },
+
+    {
+
       title: 'Slot Booking',
       category: 'web',
       image: slot,
       description: 'The slot booking website is a user-friendly platform for selecting, managing, and confirming time slots for events or services with real-time availability updates.',
       technologies: ['HTML', 'CSS', 'SQL' , 'PHP'],
       link: 'https://siddeshbooking.freewebhostmost.com',
-      github: '#'
+      
+
     },
     {
       title: 'Inventoy Management',
@@ -83,8 +90,19 @@ const Projects = () => {
       description: 'The inventory management system is a streamlined platform for tracking, organizing, and managing stock levels, orders, and deliveries efficiently.',
       technologies: ['HTML', 'CSS', 'SQL' , 'PHP'],
       link: 'https://siddeshbooking.freewebhostmost.com',
-      github: '#'
-    }
+      
+
+    },
+    {
+      title: 'Real Estate Website',
+      category: 'web',
+      image: suhas,
+      description: 'Property listing and management platform',
+      technologies: ['Next.js', 'Tailwind CSS', 'React'],
+      link: 'https://suhas-constructions.vercel.app',
+      
+      
+    },
   ];
 
   const categories = [

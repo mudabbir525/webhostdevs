@@ -55,7 +55,7 @@ const Contact = () => {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
       details: 'info@webhostdevs.com',
-      link: 'mailto:sohailmudabbir@gmail.com'
+      link: 'mailto:info@webhostdevs.com'
     },
     {
       icon: <MapPin className="w-6 h-6" />,

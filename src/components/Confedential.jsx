@@ -11,7 +11,7 @@ const Confidential = () => {
         {
             title: 'Admin Panel [Mahaspice]',
             category: 'dashboard',
-            image: ams, // Replace with your image import
+            image: ams, 
             description: 'The Mahaspice admin panel is a powerful dashboard for managing orders, menus, payments, and customer interactions efficiently in real time.',
             driveLink: 'https://drive.google.com/drive/folders/1lt40DC53sLX5OqdSyHrMpASxcocj8oYU?usp=sharing'
         }
