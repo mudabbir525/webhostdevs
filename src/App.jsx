@@ -12,6 +12,7 @@ import TeamPage from './components/TeamPage';
 import './index.css';
 import Confidential from './components/Confedential';
 import NotFound from './components/NotFound';
+import Careers from './components/Careers';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
               <Route path="/projects" element={<Projects />} />
               <Route path="/projects/confidential" element={<Confidential />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/careers" element={<Careers />} />
               <Route path="/Our-team" element={<TeamPage />} />
               <Route path="*" element={<NotFound/>} />
             </Routes>
