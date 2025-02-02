@@ -7,10 +7,11 @@ import Home from './components/HomePage';
 import About from './components/About';
 import Services from './components/Services';
 import Projects from './components/Projects';
-import InteractiveBackground from './components/InteractiveBackground';
 import Contact from './components/Contact';
 import TeamPage from './components/TeamPage';
 import './index.css';
+import Confidential from './components/Confedential';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
@@ -25,11 +26,12 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
-              <Route path="/ib" element={<InteractiveBackground />} />
               <Route path="/services" element={<Services />} />
               <Route path="/projects" element={<Projects />} />
+              <Route path="/projects/confidential" element={<Confidential />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/teampage" element={<TeamPage />} />
+              <Route path="/Our-team" element={<TeamPage />} />
+              <Route path="*" element={<NotFound/>} />
             </Routes>
           </main>
           

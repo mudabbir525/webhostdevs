@@ -24,13 +24,13 @@ const Projects = () => {
       github: '#'
     },
     {
-      title: 'Admin Panel',
+      title: 'Admin Panel [Mahaspice]',
       category: 'dashboard',
       image: ams,
       description: 'The Mahaspice admin panel is a powerful dashboard for managing orders, menus, payments, and customer interactions efficiently in real time.',
       technologies: ['React', 'Php', 'TailwindCSS'],
-      link: 'https://adminms.desoftimp.com/dashboard',
-      github: '#'
+      link: 'projects/confidential',
+      
     },
     {
       title: 'Book My Cater',
@@ -39,7 +39,6 @@ const Projects = () => {
       description: 'Book My Caterer is a comprehensive platform for discovering, comparing, and booking catering services, complete with detailed vendor profiles and seamless user interaction.',
       technologies: ['React', 'PHP', 'TailwindCSS'],
       link: 'https://book-my-cater.vercel.app',
-      github: '#'
     },
     {
       title: 'Labneh',
@@ -187,13 +186,13 @@ const Projects = () => {
                       <ExternalLink className="w-4 h-4" />
                       Live Demo
                     </a>
-                    <a
+                    {/* <a
                       href={project.github}
                       className="text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 flex items-center gap-2"
                     >
                       <Github className="w-4 h-4" />
                       Source
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </motion.div>
