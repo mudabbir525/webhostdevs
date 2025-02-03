@@ -9,6 +9,7 @@ import {
   Server,
   Settings,
 } from "lucide-react";
+import StatsSection from "../components/StatsSection";
 
 const HomePage = () => {
   const features = [
@@ -117,7 +118,7 @@ const HomePage = () => {
       </section>
 
       {/* Stats Section */}
-      <motion.section
+      {/* <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -143,7 +144,8 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-      </motion.section>
+      </motion.section> */}
+      <StatsSection />
 
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">

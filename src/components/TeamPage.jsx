@@ -1,122 +1,276 @@
-import React, { useEffect } from 'react';
-import { Users, Github, Linkedin, Mail } from 'lucide-react';
+import React from 'react';
+import { useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { Mail, Linkedin } from 'lucide-react';
+
 import { useLocation } from 'react-router-dom';
 
+import sohail from '../assets/sohail.webp';
+import siddesh from '../assets/siddesh.webp';
+
+import adithya from '../assets/adithya.webp';
+import afshan from '../assets/afshan.webp';
+import akshat from '../assets/akshat.webp';
+import nirvignya from '../assets/nirvignya.webp';
+import sirichandana from '../assets/sirichandana.webp';
+import srinidhi from '../assets/srinidhi.webp';
+import vishal from '../assets/vishal.webp';
+import vennela from '../assets/vennela.webp';
+import kc from '../assets/kc.webp';
+import { image } from 'framer-motion/client';
+
+
 const TeamPage = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [location]);
-
-  const teamMembers = [
+    const location = useLocation();
+    
+      useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, [location]);
+  
+  const founders = [
     {
       name: "Mohammed Mudabbir Pasha",
-      role: "Founder & Lead Developer",
-      description: "Full-stack developer with expertise in React, Node.js, and cloud technologies.",
-      email: "sohailmudabbir@gmail.com",
+      role: "Founder & CEO",
+      description: "Leads company vision, strategy, and overall direction. Makes key business decisions and oversees all major operations while ensuring company growth and success.",
+      email: "ceo@webhostdevs.com",
       linkedin: "https://www.linkedin.com/in/mohammed-mudabbir-pasha/",
-      github: "#"
+      image: sohail,
     },
     {
       name: "Siddeshwar Reddy",
-      role: "UI/UX Design Lead",
-      description: "Creative director specializing in user-centered design and brand identity.",
-      email: "designer@webhostdevs.com",
+      role: "Co-Founder & COO",
+      description: "Manages day-to-day operations and business processes. Oversees team efficiency, resource allocation, and implements organizational strategies to achieve company goals.",
+      email: "siddesh@webhostdevs.com",
       linkedin: "https://www.linkedin.com/in/siddesh7077/",
-      github: "#"
-    },
-    {
-      name: "David Chen",
-      role: "Backend Developer",
-      description: "Expert in building robust server architectures and database optimization.",
-      email: "backend@webhostdevs.com",
-      linkedin: "#",
-      github: "#"
-    },
-    {
-      name: "Bharadwaj",
-      role: "Frontend Developer",
-      description: "Specialized in creating responsive and accessible web interfaces using modern frameworks.",
-      email: "frontend@webhostdevs.com",
-      linkedin: "#",
-      github: "#"
-    },
+      image: siddesh,
+    }
+  ];
+
+  const teamMembers = [
     {
       name: "Krishna Chaitanya",
-      role: "DevOps Engineer",
-      description: "Managing cloud infrastructure and implementing CI/CD pipelines for seamless deployment.",
-      email: "devops@webhostdevs.com",
-      linkedin: "#",
-      github: "#"
+      role: "Technical lead, Full Stack developer",
+      description: "Leads technical architecture and development across projects. Mentors development team and ensures code quality while managing system infrastructure and scalability.",
+      email: "info@webhostdevs.com",
+      linkedin: "https://www.linkedin.com/in/krishnachaitanya10",
+      image : kc
     },
+    {
+      name: "Siri Chandana",
+      role: "Strategic Consultant",
+      description: "Analyzes business requirements and provides strategic recommendations for project success. Ensures alignment between client needs and technical solutions.",
+      email: "info@webhostdevs.com",
+      linkedin: "https://www.linkedin.com/in/siri-chandana-99ba59214/",
+      image: sirichandana
+    },
+    // {
+    //   name: "Shiva rama Bharadwaj",
+    //   role: "SEO Specialist",
+    //   description: "Develops and implements SEO strategies to improve website visibility and search engine rankings. Creates and optimizes content for search performance while monitoring analytics and adjusting strategies based on performance metrics.",
+    //   email: "info@webhostdevs.com",
+    //   linkedin: "https://www.linkedin.com/in/buddhiraju-shiva-rama-bharadwaj-163828225/",
+    //   image: "/path/to/bharadwaj.jpg"
+    // },
     {
       name: "Akshat",
-      role: "Mobile App Developer",
-      description: "Creating cross-platform mobile applications using React Native and Flutter.",
-      email: "mobile@webhostdevs.com",
-      linkedin: "#",
-      github: "#"
+      role: "Figma Designer",
+      description: "Creates user interface designs and interactive prototypes. Develops design systems and ensures consistent user experience across platforms.",
+      email: "info@webhostdevs.com",
+      linkedin: "https://www.linkedin.com/in/akshatvarahagiri/",
+      image: akshat
     },
     {
-      name: "Sri Chandana",
-      role: "SEO Specialist",
-      description: "Optimizing web presence and implementing effective digital marketing strategies.",
-      email: "seo@webhostdevs.com",
-      linkedin: "#",
-      github: "#"
+      name: "Srinidhi",
+      role: "Grahic Designer",
+      description: "Designs visual assets and marketing materials. Creates and maintains brand identity elements while ensuring design consistency.",
+      email: "info@webhostdevs.com",
+      linkedin: "https://www.linkedin.com/in/srinidhirao-k-561b85334/",
+      image : srinidhi
     },
     {
-      name: "Nirvignya",
-      role: "Project Manager",
-      description: "Ensuring smooth project execution and client satisfaction through effective communication.",
-      email: "pm@webhostdevs.com",
-      linkedin: "#",
-      github: "#"
+      name: "Mohammed Afshan",
+      role: "Technical Business Analyst (Intern)",
+      description: "Analyzes business requirements and translates them into technical specifications. Assists in project documentation and requirement gathering.",
+      email: "info@webhostdevs.com",
+      linkedin: "https://www.linkedin.com/in/mohammed-afshan-b188b8276/",
+      image : afshan
+    },
+    {
+      name: "Adithya Naik",
+      role: "Full Stack Developer (Intern)",
+      description: "Develops both frontend and backend features for web applications. Works with senior developers to implement and maintain code across the technology stack.",
+      email: "adithyanaik@webhostdevs.com",
+      linkedin: "https://www.linkedin.com/in/adithyanaik/",
+      image : adithya
     },
     {
       name: "Vennela",
-      role: "Quality Assurance Lead",
-      description: "Maintaining high standards through comprehensive testing and quality control processes.",
-      email: "qa@webhostdevs.com",
-      linkedin: "#",
-      github: "#"
-    }
+      role: "Full Stack Developer (Intern)",
+      description: "Builds and maintains web applications across the full technology stack. Implements features and fixes bugs under senior developer guidance.",
+      email: "vennelabittla@webhostdevs.com",
+      linkedin: "https://www.linkedin.com/in/vennela-bittla-667bb4336",
+      image : vennela
+
+    },{
+      name: "Nirvignya",
+      role: "Full Stack Developer (Intern)",
+      description: "Develops and tests web applications using full-stack technologies. Collaborates with team members to implement new features and maintain existing code.",
+      email: "nirvignya@webhostdevs.com",
+      linkedin: "https://www.linkedin.com/in/nirvignya-ageer-694a65317",
+      image : nirvignya
+    },
+    {
+      name: "Vishal",
+      role: "Backend Developer (Intern)",
+      description: "Focuses on server-side application development and database management. Implements APIs and maintains backend infrastructure under supervision.",
+      email: "vishal@webhostdevs.com",
+      linkedin: "https://www.linkedin.com/in/vishal-arya-dacha-558084256",
+      image : vishal 
+    }
+
   ];
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.4,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
-    <div id="team" className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      {/* Header section matching Projects */}
-      <section className="bg-blue-600 dark:bg-blue-800 py-20 px-4 text-center">
-        <h1 className="text-4xl font-bold text-white mb-4 mt-12">Our Team</h1>
-        <p className="text-xl text-blue-100 max-w-2xl mx-auto mt-2">
-          Meet the talented individuals who make WebHostDevs your go-to web development solution.
-        </p>
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
+      {/* Hero Section */}
+      <section className="relative overflow-hidden bg-blue-600 dark:bg-blue-800">
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.1 }}
+          className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"
+        />
+        <div className="relative px-4 py-20 text-center">
+          <motion.h1 
+            initial={{ y: -20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            className="text-4xl md:text-5xl font-bold text-white mb-4 mt-12"
+          >
+            Meet Our Team
+          </motion.h1>
+          <motion.p 
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-xl text-blue-100 max-w-2xl mx-auto mt-2"
+          >
+            The passionate individuals behind WebHostDevs' success
+          </motion.p>
+        </div>
       </section>
-      
+
       <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {teamMembers.map((member, index) => (
-            <div key={index} className="rounded-lg p-6 shadow-lg bg-white dark:bg-slate-800">
-              <div className="text-center">
-                <div className="w-24 h-24 rounded-full bg-blue-500 mx-auto mb-4 flex items-center justify-center">
-                  <Users className="w-12 h-12 text-white" />
+        {/* Founders Section */}
+        <motion.div 
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16"
+        >
+          {founders.map((founder, index) => (
+            <motion.div
+              key={index}
+              variants={itemVariants}
+              className="rounded-xl overflow-hidden bg-white dark:bg-slate-800 shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              <div className="p-4 flex flex-col items-center text-center">
+                <div className="w-48 h-48 mb-2 rounded-full overflow-hidden">
+                  <img 
+                    src={founder.image} 
+                    alt={founder.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
-                <p className="text-blue-500 dark:text-blue-400 mb-4">{member.role}</p>
-                <p className="text-gray-600 dark:text-gray-300 mb-6">{member.description}</p>
-                <div className="flex justify-center space-x-4">
-                  <a href={`mailto:${member.email}`} className="text-gray-600 dark:text-gray-300 hover:text-blue-500">
-                    <Mail className="w-5 h-5" />
+                <h3 className="text-2xl font-bold text-blue-900 dark:text-blue-100 mb-2">{founder.name}</h3>
+                <p className="text-blue-600 dark:text-blue-400 text-lg mb-2">{founder.role}</p>
+                <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-lg">{founder.description}</p>
+                <div className="flex space-x-4">
+                  <a 
+                    href={`mailto:${founder.email}`}
+                    className="text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors"
+                    aria-label={`Email ${founder.name}`}
+                  >
+                    <Mail className="w-6 h-6" />
                   </a>
-                  <a href={member.linkedin} className="text-gray-600 dark:text-gray-300 hover:text-blue-500">
-                    <Linkedin className="w-5 h-5" />
+                  <a 
+                    href={founder.linkedin}
+                    className="text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors"
+                    aria-label={`${founder.name}'s LinkedIn profile`}
+                  >
+                    <Linkedin className="w-6 h-6" />
                   </a>
-                  
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
+
+        {/* Team Members Section */}
+        <motion.div 
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center"
+        >
+          {teamMembers.map((member, index) => (
+            <motion.div
+              key={index}
+              variants={itemVariants}
+              className="rounded-xl overflow-hidden bg-white dark:bg-slate-800 shadow-md hover:shadow-xl transition-all duration-300"
+            >
+              <div className="p-6 flex flex-col items-center text-center">
+                <div className="w-32 h-32 mb-4 rounded-full overflow-hidden">
+                  <img 
+                    src={member.image} 
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-blue-900 dark:text-blue-100 mb-2">{member.name}</h3>
+                <p className="text-blue-500 dark:text-blue-400 mb-3">{member.role}</p>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">{member.description}</p>
+                <div className="flex space-x-4">
+                  <a 
+                    href={`mailto:${member.email}`}
+                    className="text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors"
+                    aria-label={`Email ${member.name}`}
+                  >
+                    <Mail className="w-5 h-5" />
+                  </a>
+                  <a 
+                    href={member.linkedin}
+                    className="text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors"
+                    aria-label={`${member.name}'s LinkedIn profile`}
+                  >
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </div>
   );

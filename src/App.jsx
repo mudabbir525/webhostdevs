@@ -14,6 +14,7 @@ import Confidential from './components/Confedential';
 import NotFound from './components/NotFound';
 import Careers from './components/Careers';
 
+import Privacy from './components/Privacy';
 function App() {
   return (
     <ThemeProvider attribute="class" defaultTheme="system">
@@ -33,6 +34,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/careers" element={<Careers />} />
               <Route path="/Our-team" element={<TeamPage />} />
+              <Route path="/privacy" element={<Privacy />} />
               <Route path="*" element={<NotFound/>} />
             </Routes>
           </main>

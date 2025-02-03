@@ -1,6 +1,24 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Terminal, Code2, Brackets, Database } from 'lucide-react';
+import { 
+  Terminal, 
+  Code2, 
+  Brackets, 
+  Database, 
+  Cpu, 
+  Server, 
+  Cloud, 
+  Code, 
+  Bug, 
+  GitBranch, 
+  // Package, 
+  // Settings, 
+  // Layers, 
+  // FileCode, 
+  // Globe, 
+  // Shield 
+} from "lucide-react";
+
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
@@ -42,7 +60,25 @@ const HeroSection = () => {
       }
     }
   };
-
+  const icons = [
+    Terminal, 
+    Code2, 
+    Brackets, 
+    Database, 
+    Cpu,           // Represents processing power, computing
+    Server,        // Represents backend, hosting
+    Cloud,         // Represents cloud computing, storage
+    Code,          // Represents coding in general
+    Bug,           // Represents debugging, fixing issues
+    GitBranch,     // Represents version control (Git)
+    // Package,       // Represents dependencies, package management
+    // Settings,      // Represents configurations, dev tools
+    // Layers,        // Represents multi-layer architecture
+    // FileCode,      // Represents source code files
+    // Globe,         // Represents web development
+    // Shield,        // Represents cybersecurity, security
+  ];
+  
   const item = {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0 }
@@ -51,44 +87,56 @@ const HeroSection = () => {
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
       {/* Background Grid Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="grid grid-cols-8 h-full">
-          {[...Array(8)].map((_, i) => (
-            <div key={i} className="border-r border-blue-500/20" />
-          ))}
-        </div>
+      <div className="absolute inset-0">
+      <div className="grid grid-cols-8 h-full opacity-0.1">
+        {[...Array(8)].map((_, i) => (
+          <div 
+            key={i} 
+            className="border-r border-blue-500/10 dark:border-blue-400/10 bg-blue-50/10 dark:bg-blue-900/10 backdrop-blur-sm"
+          />
+        ))}
       </div>
+    </div>
 
       {/* Floating Icons */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.1 }}
-        className="absolute inset-0 overflow-hidden pointer-events-none"
-      >
-        {[Terminal, Code2, Brackets, Database].map((Icon, index) => (
-          <motion.div
-            key={index}
-            initial={{ y: Math.random() * 100 }}
-            animate={{ 
-              y: [Math.random() * 100, Math.random() * -100],
-              x: [Math.random() * 100, Math.random() * -100]
-            }}
-            transition={{
-              duration: 15,
-              repeat: Infinity,
-              repeatType: "reverse",
-              delay: index * 2
-            }}
-            className="absolute text-blue-500/20"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`
-            }}
-          >
-            <Icon size={48} />
-          </motion.div>
-        ))}
-      </motion.div>
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 0.5 }}
+      transition={{ duration: 1 }}
+      className="absolute inset-0 overflow-hidden pointer-events-none"
+    >
+      {icons.map((Icon, index) => (
+        <motion.div
+          key={index}
+          initial={{ 
+            y: Math.random() * 100,
+            rotate: Math.random() * 20 - 10
+          }}
+          animate={{ 
+            y: [Math.random() * 100, Math.random() * -100],
+            x: [Math.random() * 100, Math.random() * -100],
+            rotate: [Math.random() * 20 - 10, Math.random() * -20 + 10]
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            repeatType: "reverse",
+            delay: index ,
+            ease: "easeInOut"
+          }}
+          className="absolute text-blue-500/30 dark:text-blue-400/30 drop-shadow-lg"
+          style={{
+            left: `${Math.random() * 80 + 10}%`,  // Keep icons away from edges
+            top: `${Math.random() * 80 + 10}%`    // Keep icons away from edges
+          }}
+        >
+          <Icon 
+            size={64} 
+            className="transform hover:scale-110 transition-transform duration-300"
+          />
+        </motion.div>
+      ))}
+    </motion.div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-12 min-h-screen flex items-center">
         <div className="grid lg:grid-cols-2 gap-12 items-center">

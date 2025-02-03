@@ -3,6 +3,8 @@ import { useTheme } from 'next-themes';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { motion } from 'framer-motion';
 
+import { Link } from 'react-router-dom';
+
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { theme, setTheme } = useTheme();
@@ -11,7 +13,9 @@ const NavBar = () => {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
+    { name: 'Our Team', href: '/Our-team' },
     { name: 'Projects', href: '/projects' },
+    { name: 'Careers', href: '/careers' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -21,9 +25,11 @@ const NavBar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
+            <Link to="/">
             <h1 className="text-2xl font-bold text-blue-600 dark:text-blue-400">
               WebHostDevs
             </h1>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}

@@ -208,6 +208,7 @@ const Projects = () => {
                   <div className="flex justify-between items-center">
                     <a
                       href={project.link}
+                      target='_blank'
                       className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 flex items-center gap-2"
                     >
                       <ExternalLink className="w-4 h-4" />
