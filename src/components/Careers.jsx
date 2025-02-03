@@ -2,10 +2,17 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useForm } from '@formspree/react';
 import { Send, Users, Code, Bookmark } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const Careers = () => {
-    const [state, handleSubmit] = useForm("myzkjnay");
+    const location = useLocation();
+    
 
+    const [state, handleSubmit] = useForm("myzkjnay");
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, [location]);
     const benefits = [
         {
             icon: <Code className="w-6 h-6" />,
@@ -124,82 +131,84 @@ const Careers = () => {
             Apply Now
         </h2>
         <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Full Name
-                </label>
-                <input
-                    id="name"
-                    type="text"
-                    name="name"
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
-                />
-            </div>
+                        <div>
+                            <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                Full Name
+                            </label>
+                            <input
+                                id="name"
+                                type="text"
+                                name="name"
+                                required
+                                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                            />
+                        </div>
 
-            <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Email Address
-                </label>
-                <input
-                    id="email"
-                    type="email"
-                    name="email"
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
-                />
-            </div>
+                        <div>
+                            <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                Email Address
+                            </label>
+                            <input
+                                id="email"
+                                type="email"
+                                name="email"
+                                required
+                                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                            />
+                        </div>
 
-            <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Cover Letter
-                </label>
-                <textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
-                />
-            </div>
+                        <div>
+                            <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                Cover Letter
+                            </label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows={4}
+                                required
+                                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                            />
+                        </div>
 
-            <div>
-                <label htmlFor="resume" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Resume (Upload File)
-                </label>
-                <input
-                    id="resume"
-                    type="file"
-                    name="resume"
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
-                />
-            </div>
+                        <div>
+                            <label htmlFor="resume" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                Resume / Portfolio (URL)
+                            </label>
+                            <input
+                                id="resume"
+                                type="url"
+                                name="resume"
+                                placeholder="https://your-link.com"
+                                required
+                                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                            />
+                        </div>
 
-            <div>
-                <label htmlFor="whyHire" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Why Should We Hire You?
-                </label>
-                <textarea
-                    id="whyHire"
-                    name="whyHire"
-                    rows={4}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
-                />
-            </div>
+                        <div>
+                            <label htmlFor="whyHire" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                Why Should We Hire You?
+                            </label>
+                            <textarea
+                                id="whyHire"
+                                name="whyHire"
+                                rows={4}
+                                required
+                                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
+                            />
+                        </div>
 
-            <motion.button
-                type="submit"
-                disabled={state.submitting}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 disabled:opacity-50"
-            >
-                <Send className="w-5 h-5" />
-                {state.submitting ? "Submitting..." : "Submit Application"}
-            </motion.button>
-        </form>
+                        <motion.button
+                            type="submit"
+                            disabled={state.submitting}
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 disabled:opacity-50"
+                        >
+                            <Send className="w-5 h-5" />
+                            {state.submitting ? "Submitting..." : "Submit Application"}
+                        </motion.button>
+                    </form>
+
     </div>
 </section>
 

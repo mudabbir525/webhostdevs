@@ -1,8 +1,14 @@
-import React from 'react';
+import {React, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Code, Smartphone, Search, ShoppingCart, Server, Figma, Database, Globe } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 
 const Services = () => {
+  const location = useLocation();
+      
+        useEffect(() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }, [location]);
   const services = [
     {
       icon: <Code />,

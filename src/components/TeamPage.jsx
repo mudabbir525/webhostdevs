@@ -111,9 +111,7 @@ const TeamPage = () => {
                   <a href={member.linkedin} className="text-gray-600 dark:text-gray-300 hover:text-blue-500">
                     <Linkedin className="w-5 h-5" />
                   </a>
-                  <a href={member.github} className="text-gray-600 dark:text-gray-300 hover:text-blue-500">
-                    <Github className="w-5 h-5" />
-                  </a>
+                  
                 </div>
               </div>
             </div>

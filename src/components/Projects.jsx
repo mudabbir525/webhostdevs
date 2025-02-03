@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import {React, useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
+
+
 import ms from '../assets/ms.png'
 import ams from '../assets/ams.png'
 import lb from '../assets/lb.png'
@@ -12,6 +15,12 @@ import dlvb from '../assets/dlvb.png'
 import invent from '../assets/invent.png'
 
 const Projects = () => {
+  const location = useLocation();
+  
+    useEffect(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, [location]);
+
   const [filter, setFilter] = useState('all');
 
   const projects = [
