@@ -14,11 +14,7 @@ import {
 const Footer = () => {
   const [email, setEmail] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Newsletter signup:', email);
-    setEmail('');
-  };
+
 
   const links = {
     services: [

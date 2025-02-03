@@ -15,6 +15,7 @@ import NotFound from './components/NotFound';
 import Careers from './components/Careers';
 
 import Privacy from './components/Privacy';
+
 function App() {
   return (
     <ThemeProvider attribute="class" defaultTheme="system">

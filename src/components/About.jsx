@@ -1,4 +1,4 @@
-import {React, useState, useEffect } from 'react';
+import {React,  useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Code, Layout, Server, Shield, Database, Brush, Gauge, Settings } from 'lucide-react';
 import { useLocation } from 'react-router-dom';

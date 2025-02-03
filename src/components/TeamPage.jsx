@@ -6,7 +6,7 @@ import { Mail, Linkedin } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
 
 import sohail from '../assets/sohail.webp';
-import siddesh from '../assets/siddesh.webp';
+import siddesh from '../assets/siddesh.jpg';
 
 import adithya from '../assets/adithya.webp';
 import afshan from '../assets/afshan.webp';
@@ -17,7 +17,7 @@ import srinidhi from '../assets/srinidhi.webp';
 import vishal from '../assets/vishal.webp';
 import vennela from '../assets/vennela.webp';
 import kc from '../assets/kc.webp';
-import { image } from 'framer-motion/client';
+
 
 
 const TeamPage = () => {
@@ -90,7 +90,7 @@ const TeamPage = () => {
     {
       name: "Mohammed Afshan",
       role: "Technical Business Analyst (Intern)",
-      description: "Analyzes business requirements and translates them into technical specifications. Assists in project documentation and requirement gathering.",
+      description: "Analyzes business requirements and translates them into technical specifications. Assists in project documentation and    requirement gathering.",
       email: "info@webhostdevs.com",
       linkedin: "https://www.linkedin.com/in/mohammed-afshan-b188b8276/",
       image : afshan
@@ -106,7 +106,7 @@ const TeamPage = () => {
     {
       name: "Vennela",
       role: "Full Stack Developer (Intern)",
-      description: "Builds and maintains web applications across the full technology stack. Implements features and fixes bugs under senior developer guidance.",
+      description: "Builds and maintains web applications    across the full technology stack. Implements features and fixes bugs under senior developer guidance.",
       email: "vennelabittla@webhostdevs.com",
       linkedin: "https://www.linkedin.com/in/vennela-bittla-667bb4336",
       image : vennela
@@ -159,7 +159,7 @@ const TeamPage = () => {
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.1 }}
-          className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"
+          className="absolute inset-0  bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"
         />
         <div className="relative px-4 py-20 text-center">
           <motion.h1 
@@ -232,7 +232,7 @@ const TeamPage = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center"
+          className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-6 place-items-center"
         >
           {teamMembers.map((member, index) => (
             <motion.div
@@ -240,7 +240,7 @@ const TeamPage = () => {
               variants={itemVariants}
               className="rounded-xl overflow-hidden bg-white dark:bg-slate-800 shadow-md hover:shadow-xl transition-all duration-300"
             >
-              <div className="p-6 flex flex-col items-center text-center">
+              <div className="p-6 flex flex-col min-h-[400px]  items-center text-center">
                 <div className="w-32 h-32 mb-4 rounded-full overflow-hidden">
                   <img 
                     src={member.image} 
