@@ -59,7 +59,7 @@ const Projects = () => {
       image: dlvb,
       description: 'Designed and developed a professional website for DLVB IMPEX PVT. LTD., a healthcare pioneer committed to innovation, compassionate care, and empowering communities.',
       technologies: ['Next.js', 'Tailwind CSS', 'React'],
-      link: 'https://suhas-constructions.vercel.app',
+      link: 'https://dlvbimpexpvtltd.com/',
       github: '#'
     },
     {
