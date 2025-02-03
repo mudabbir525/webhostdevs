@@ -81,7 +81,7 @@ const TeamPage = () => {
     },
     {
       name: "Srinidhi",
-      role: "Grahic Designer",
+      role: "Graphic Designer",
       description: "Designs visual assets and marketing materials. Creates and maintains brand identity elements while ensuring design consistency.",
       email: "info@webhostdevs.com",
       linkedin: "https://www.linkedin.com/in/srinidhirao-k-561b85334/",
