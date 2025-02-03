@@ -11,12 +11,7 @@ import {
   Code, 
   Bug, 
   GitBranch, 
-  // Package, 
-  // Settings, 
-  // Layers, 
-  // FileCode, 
-  // Globe, 
-  // Shield 
+
 } from "lucide-react";
 
 import { Link } from "react-router-dom";
@@ -87,7 +82,7 @@ const HeroSection = () => {
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
       {/* Background Grid Pattern */}
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
       <div className="grid grid-cols-8 h-full opacity-0.1">
         {[...Array(8)].map((_, i) => (
           <div 
@@ -96,10 +91,10 @@ const HeroSection = () => {
           />
         ))}
       </div>
-    </div>
+    </div> */}
 
       {/* Floating Icons */}
-      <motion.div
+      {/* <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 0.5 }}
       transition={{ duration: 1 }}
@@ -136,7 +131,7 @@ const HeroSection = () => {
           />
         </motion.div>
       ))}
-    </motion.div>
+    </motion.div> */}
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-12 min-h-screen flex items-center">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
