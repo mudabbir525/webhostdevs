@@ -7,6 +7,7 @@ import { useLocation } from 'react-router-dom';
 
 import sohail from '../assets/sohail.webp';
 import siddesh from '../assets/siddesh.jpg';
+import bharadwaj from '../assets/bharadwaj.jpg';
 
 import adithya from '../assets/adithya.webp';
 import afshan from '../assets/afshan.webp';
@@ -17,6 +18,7 @@ import srinidhi from '../assets/srinidhi.webp';
 import vishal from '../assets/vishal.webp';
 import vennela from '../assets/vennela.webp';
 import kc from '../assets/kc.webp';
+import { Link } from "react-router-dom";
 
 
 
@@ -63,14 +65,14 @@ const TeamPage = () => {
       linkedin: "https://www.linkedin.com/in/siri-chandana-99ba59214/",
       image: sirichandana
     },
-    // {
-    //   name: "Shiva rama Bharadwaj",
-    //   role: "SEO Specialist",
-    //   description: "Develops and implements SEO strategies to improve website visibility and search engine rankings. Creates and optimizes content for search performance while monitoring analytics and adjusting strategies based on performance metrics.",
-    //   email: "info@webhostdevs.com",
-    //   linkedin: "https://www.linkedin.com/in/buddhiraju-shiva-rama-bharadwaj-163828225/",
-    //   image: "/path/to/bharadwaj.jpg"
-    // },
+    {
+      name: " B Shiva rama Bharadwaj",
+      role: "SEO Specialist",
+      description: "SEO Specialist and Digital Marketer skilled in boosting website visibility, optimizing content for search performance, and refining strategies based on analytics to drive results.",
+      email: "info@webhostdevs.com",
+      linkedin: "https://www.linkedin.com/in/buddhiraju-shiva-rama-bharadwaj-163828225/",
+      image: bharadwaj
+    },
     {
       name: "Akshat",
       role: "Figma Designer",

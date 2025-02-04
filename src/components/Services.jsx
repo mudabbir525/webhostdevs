@@ -2,6 +2,7 @@ import {React, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Code, Smartphone,  ShoppingCart,  Figma, Database, Globe } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const location = useLocation();
@@ -81,7 +82,7 @@ const Services = () => {
   const plans = [
     {
       name: "Basic",
-      price: "13,000",
+      price: "Custom",
       features: [
         "5 Pages Website",
         "Basic SEO",
@@ -93,7 +94,7 @@ const Services = () => {
     },
     {
       name: "Professional",
-      price: "35,000",
+      price: "Custom",
       features: [
         "10 Pages Website",
         "Advanced SEO",
@@ -232,9 +233,11 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
+                <Link to ="/contact">
                 <button className="mt-8 w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-200">
-                  Get Started
+                  Get Started  
                 </button>
+              </Link>
               </motion.div>
             ))}
           </div>
