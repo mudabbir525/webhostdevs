@@ -18,6 +18,7 @@ import srinidhi from '../assets/srinidhi.webp';
 import vishal from '../assets/vishal.webp';
 import vennela from '../assets/vennela.webp';
 import kc from '../assets/kc.webp';
+import abhi from '../assets/abhi.jpg';
 import { Link } from "react-router-dom";
 
 
@@ -50,6 +51,14 @@ const TeamPage = () => {
 
   const teamMembers = [
     {
+      name: "Abhinav Reddy Kothapally",
+      role: "Chief Marketing Officer",
+      description: "Abhinav Reddy Kothapally is the Chief Marketing Officer at WebHostDevs. With a strategic mindset and a passion for branding, he drives innovative marketing campaigns to expand the company’s reach.",
+      email: "info@webhostdevs.com",
+      linkedin: "https://www.linkedin.com/in/abhinav-reddy-kothapally-63351a26a/",
+      image: abhi
+    },
+    {
       name: "Krishna Chaitanya",
       role: "Technical lead, Full Stack developer",
       description: "Leads technical architecture and development across projects. Mentors development team and ensures code quality while managing system infrastructure and scalability.",
@@ -65,6 +74,7 @@ const TeamPage = () => {
       linkedin: "https://www.linkedin.com/in/siri-chandana-99ba59214/",
       image: sirichandana
     },
+    
     {
       name: " B Shiva rama Bharadwaj",
       role: "SEO Specialist",
