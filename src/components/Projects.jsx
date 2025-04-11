@@ -97,15 +97,6 @@ const Projects = () => {
 
 
     {
-      title: 'Book My Cater',
-      category: 'web',
-      image: bmc,
-      description: 'Book My Caterer is a comprehensive platform for discovering, comparing, and booking catering services, complete with detailed vendor profiles and seamless user interaction.',
-      technologies: ['React', 'PHP', 'TailwindCSS'],
-      link: 'https://book-my-cater.vercel.app',
-    },
-
-    {
 
       title: 'Slot Booking',
       category: 'web',
