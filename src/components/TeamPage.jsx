@@ -19,6 +19,8 @@ import vishal from '../assets/vishal.webp';
 import vennela from '../assets/vennela.webp';
 import kc from '../assets/kc.webp';
 import abhi from '../assets/abhi.jpg';
+import rahul from '../assets/rahul.jpeg';
+
 import { Link } from "react-router-dom";
 
 
@@ -92,12 +94,36 @@ const TeamPage = () => {
       image: akshat
     },
     {
+      name: "Rahul Reddy",
+      role: "Dot Net Developer",
+      description: "At WebHostDevs, Rahul is committed to delivering seamless and efficient web solutions that enhance user experience and business operations.",
+      email: "info@webhostdevs.com",
+      linkedin: "https://www.linkedin.com/in/",
+      image : rahul
+    },
+    {
       name: "Srinidhi",
       role: "Graphic Designer",
       description: "Designs visual assets and marketing materials. Creates and maintains brand identity elements while ensuring design consistency.",
       email: "info@webhostdevs.com",
       linkedin: "https://www.linkedin.com/in/srinidhirao-k-561b85334/",
       image : srinidhi
+    },
+    {
+      name: "Adithya Naik",
+      role: "Full Stack Developer ",
+      description: "Develops both frontend and backend features for web applications. Works with senior developers to implement and maintain code across the technology stack.",
+      email: "adithyanaik@webhostdevs.com",
+      linkedin: "https://www.linkedin.com/in/adithyanaik/",
+      image : adithya
+    },
+    {
+      name: "Vishal",
+      role: "Backend Developer ",
+      description: "Focuses on server-side application development and database management. Implements APIs and maintains backend infrastructure under supervision.",
+      email: "vishal@webhostdevs.com",
+      linkedin: "https://www.linkedin.com/in/vishal-arya-dacha-558084256",
+      image : vishal 
     },
     {
       name: "Mohammed Afshan",
@@ -107,14 +133,7 @@ const TeamPage = () => {
       linkedin: "https://www.linkedin.com/in/mohammed-afshan-b188b8276/",
       image : afshan
     },
-    {
-      name: "Adithya Naik",
-      role: "Full Stack Developer (Intern)",
-      description: "Develops both frontend and backend features for web applications. Works with senior developers to implement and maintain code across the technology stack.",
-      email: "adithyanaik@webhostdevs.com",
-      linkedin: "https://www.linkedin.com/in/adithyanaik/",
-      image : adithya
-    },
+    
     {
       name: "Vennela",
       role: "Full Stack Developer (Intern)",
@@ -131,14 +150,7 @@ const TeamPage = () => {
       linkedin: "https://www.linkedin.com/in/nirvignya-ageer-694a65317",
       image : nirvignya
     },
-    {
-      name: "Vishal",
-      role: "Backend Developer (Intern)",
-      description: "Focuses on server-side application development and database management. Implements APIs and maintains backend infrastructure under supervision.",
-      email: "vishal@webhostdevs.com",
-      linkedin: "https://www.linkedin.com/in/vishal-arya-dacha-558084256",
-      image : vishal 
-    }
+  
 
   ];
 

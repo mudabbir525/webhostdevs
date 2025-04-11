@@ -13,6 +13,10 @@ import slot from '../assets/slotbook.png'
 import bmc from '../assets/bmc.png'
 import dlvb from '../assets/dlvb.png'
 import invent from '../assets/invent.png'
+import sp from '../assets/sp.png'
+import gsc from '../assets/gsc.png'
+
+
 
 const Projects = () => {
   const location = useLocation();
@@ -71,6 +75,26 @@ const Projects = () => {
       link: 'https://marichiventures.com',
       github: '#'
     },
+
+    {
+      title: 'The SP Industries',
+      category: 'web',
+      image: sp,
+      description: 'Manufacturer of Corrugated Boxes with Export quality in Bengaluru & Hosur, India. One of the Emerging Corrugated Box Manufacturers & Suppliers in Bengaluru & Hosur, India.',
+      technologies: ['HTML', 'PHP', 'Bootstrap'],
+      link: 'https://thespindustries.in/',
+    },
+
+
+    {
+      title: 'Ghar Se Catering',
+      category: 'web',
+      image: gsc,
+      description: 'Ghar Se Catering is a comprehensive platform for discovering, comparing, and booking Homely catering services, complete with detailed vendor profiles and seamless user interaction.',
+      technologies: ['React', 'PHP', 'TailwindCSS'],
+      link: 'https://gsc.webhostdevs.com/',
+    },
+
 
     {
       title: 'Book My Cater',
