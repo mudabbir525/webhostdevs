@@ -52,14 +52,7 @@ const TeamPage = () => {
   ];
 
   const teamMembers = [
-    {
-      name: "Abhinav Reddy Kothapally",
-      role: "Chief Marketing Officer",
-      description: "Abhinav Reddy Kothapally is the Chief Marketing Officer at WebHostDevs. With a strategic mindset and a passion for branding, he drives innovative marketing campaigns to expand the company’s reach.",
-      email: "info@webhostdevs.com",
-      linkedin: "https://www.linkedin.com/in/abhinav-reddy-kothapally-63351a26a/",
-      image: abhi
-    },
+    
     {
       name: "Krishna Chaitanya",
       role: "Technical lead, Full Stack developer",
@@ -85,14 +78,7 @@ const TeamPage = () => {
       linkedin: "https://www.linkedin.com/in/buddhiraju-shiva-rama-bharadwaj-163828225/",
       image: bharadwaj
     },
-    {
-      name: "Akshat",
-      role: "Figma Designer",
-      description: "Creates user interface designs and interactive prototypes. Develops design systems and ensures consistent user experience across platforms.",
-      email: "info@webhostdevs.com",
-      linkedin: "https://www.linkedin.com/in/akshatvarahagiri/",
-      image: akshat
-    },
+    
     {
       name: "Rahul Reddy",
       role: "Dot Net Developer",
@@ -101,14 +87,7 @@ const TeamPage = () => {
       linkedin: "https://www.linkedin.com/in/",
       image : rahul
     },
-    {
-      name: "Srinidhi",
-      role: "Graphic Designer",
-      description: "Designs visual assets and marketing materials. Creates and maintains brand identity elements while ensuring design consistency.",
-      email: "info@webhostdevs.com",
-      linkedin: "https://www.linkedin.com/in/srinidhirao-k-561b85334/",
-      image : srinidhi
-    },
+    
     {
       name: "Adithya Naik",
       role: "Full Stack Developer ",
@@ -126,15 +105,6 @@ const TeamPage = () => {
       image : vishal 
     },
     {
-      name: "Mohammed Afshan",
-      role: "Technical Business Analyst (Intern)",
-      description: "Analyzes business requirements and translates them into technical specifications. Assists in project documentation and    requirement gathering.",
-      email: "info@webhostdevs.com",
-      linkedin: "https://www.linkedin.com/in/mohammed-afshan-b188b8276/",
-      image : afshan
-    },
-    
-    {
       name: "Vennela",
       role: "Full Stack Developer (Intern)",
       description: "Builds and maintains web applications    across the full technology stack. Implements features and fixes bugs under senior developer guidance.",
@@ -142,13 +112,6 @@ const TeamPage = () => {
       linkedin: "https://www.linkedin.com/in/vennela-bittla-667bb4336",
       image : vennela
 
-    },{
-      name: "Nirvignya",
-      role: "Full Stack Developer (Intern)",
-      description: "Develops and tests web applications using full-stack technologies. Collaborates with team members to implement new features and maintain existing code.",
-      email: "nirvignya@webhostdevs.com",
-      linkedin: "https://www.linkedin.com/in/nirvignya-ageer-694a65317",
-      image : nirvignya
     },
   
 
