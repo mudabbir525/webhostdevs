@@ -22,17 +22,17 @@ const Services = () => {
         "Modern UI/UX",
       ]
     },
-    {
-      icon: <Smartphone />,
-      title: "Mobile Development",
-      description: "Native and cross-platform mobile applications for iOS and Android.",
-      features: [
-        "Native Development",
-        "Cross-platform Solutions",
-        "App Store Optimization",
-        "Performance Analytics",
-      ]
-    },
+    // {
+    //   icon: <Smartphone />,
+    //   title: "Mobile Development",
+    //   description: "Native and cross-platform mobile applications for iOS and Android.",
+    //   features: [
+    //     "Native Development",
+    //     "Cross-platform Solutions",
+    //     "App Store Optimization",
+    //     "Performance Analytics",
+    //   ]
+    // },
     {
       icon: <Figma />,
       title: "UI/UX Design",
@@ -87,7 +87,7 @@ const Services = () => {
         "5 Pages Website",
         "Basic SEO",
         "Mobile Responsive",
-        "3 Months Support",
+        "1 Month Support",
         "Basic Analytics",
       ],
       isFeatured: false
@@ -99,7 +99,7 @@ const Services = () => {
         "10 Pages Website",
         "Advanced SEO",
         "Mobile Responsive",
-        "6 Months Support",
+        "3 Months Support",
         "Advanced Analytics",
         "E-commerce Integration",
         "Custom Features"
@@ -107,13 +107,13 @@ const Services = () => {
       isFeatured: true
     },
     {
-      name: "Enterprise",
+      name: "Advanced",
       price: "Custom",
       features: [
         "Unlimited Pages",
         "Premium SEO",
         "Mobile Responsive",
-        "12 Months Support",
+        "6 Months Support",
         "Premium Analytics",
         "E-commerce Integration",
         "Custom Features",

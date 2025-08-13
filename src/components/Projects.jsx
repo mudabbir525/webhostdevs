@@ -15,6 +15,15 @@ import dlvb from '../assets/dlvb.png'
 import invent from '../assets/invent.png'
 import sp from '../assets/sp.png'
 import gsc from '../assets/gsc.png'
+import UrbanNest from '../assets/UrbanNest.png'
+import InteriorVision from '../assets/InteriorVision.png'
+import GastroNova from '../assets/GastroNova.png'
+import SriMaha from '../assets/SriMaha.png'
+import Kakamani from '../assets/Kakamani.png'
+import Vivenza from '../assets/Vivenza.png'
+import Bakliv from '../assets/Bakliv.png'
+import Baba from '../assets/Baba.png'
+import AadhyaEdu from '../assets/AadhyaEdu.png'
 
 
 
@@ -70,19 +79,14 @@ const Projects = () => {
       title: 'Marichi Ventures',
       category: 'web',
       image: marichi,
-      description: 'Marichi Ventures: A dynamic website showcasing their business services, built with a focus on modern design, responsiveness, and user engagement, developed by WebHostDevs.',
-      technologies: ['React', 'TailwindCSS', 'PHP', 'SQL', 'EmailJS'],
-      link: 'https://marichiventures.com',
-      github: '#'
+      description: 'Marichi Ventures: A dynamic website showcasing their business services, built with a focus on modern design, responsiveness, and user engagement, developed by WebHostDevs.'
     },
 
     {
       title: 'The SP Industries',
       category: 'web',
       image: sp,
-      description: 'Manufacturer of Corrugated Boxes with Export quality in Bengaluru & Hosur, India. One of the Emerging Corrugated Box Manufacturers & Suppliers in Bengaluru & Hosur, India.',
-      technologies: ['HTML', 'PHP', 'Bootstrap'],
-      link: 'https://thespindustries.in/',
+      description: 'Manufacturer of Corrugated Boxes with Export quality in Bengaluru & Hosur, India. One of the Emerging Corrugated Box Manufacturers & Suppliers in Bengaluru & Hosur, India.'
     },
 
 
@@ -90,9 +94,7 @@ const Projects = () => {
       title: 'Ghar Se Catering',
       category: 'web',
       image: gsc,
-      description: 'Ghar Se Catering is a comprehensive platform for discovering, comparing, and booking Homely catering services, complete with detailed vendor profiles and seamless user interaction.',
-      technologies: ['React', 'PHP', 'TailwindCSS'],
-      link: 'https://gsc.webhostdevs.com/',
+      description: 'Ghar Se Catering is a comprehensive platform for discovering, comparing, and booking Homely catering services, complete with detailed vendor profiles and seamless user interaction.'
     },
 
 
@@ -101,31 +103,73 @@ const Projects = () => {
       title: 'Slot Booking',
       category: 'web',
       image: slot,
-      description: 'The slot booking website is a user-friendly platform for selecting, managing, and confirming time slots for events or services with real-time availability updates.',
-      technologies: ['HTML', 'CSS', 'SQL' , 'PHP'],
-      link: 'https://siddeshbooking.freewebhostmost.com',
-      
-
+      description: 'The slot booking website is a user-friendly platform for selecting, managing, and confirming time slots for events or services with real-time availability updates.'
     },
     {
       title: 'Inventoy Management',
       category: 'web',
       image: invent,
-      description: 'The inventory management system is a streamlined platform for tracking, organizing, and managing stock levels, orders, and deliveries efficiently.',
-      technologies: ['HTML', 'CSS', 'SQL' , 'PHP'],
-      link: 'https://siddeshbooking.freewebhostmost.com',
-      
-
+      description: 'The inventory management system is a streamlined platform for tracking, organizing, and managing stock levels, orders, and deliveries efficiently.'
     },
     {
       title: 'Real Estate Website',
       category: 'web',
       image: suhas,
-      description: 'Property listing and management platform',
-      technologies: ['Next.js', 'Tailwind CSS', 'React'],
-      link: 'https://suhas-constructions.vercel.app',
-      
-      
+      description: 'Property listing and management platform'
+    },
+    {
+      title: 'UrbanNest Housing Search',
+      category: 'web',
+      image: UrbanNest,
+      description: 'A React-based house-searching app that helps users find rental and for-sale properties easily. Features responsive design, smooth navigation, and intuitive search for an enhanced user experience.'
+    },
+    {
+      title: 'Interior Vision',
+      category: 'web',
+      image: InteriorVision,
+      description: 'A sleek, modern website showcasing interior design services, portfolios, and inspiration. Features elegant visuals and responsive layouts to engage clients and highlight the brand’s aesthetic.'
+    },
+    {
+      title: 'Gastro Nova',
+      category: 'web',
+      image: GastroNova,
+      description: 'A healthcare website focused on advancing GI therapeutics through ethical marketing and doctor-centric engagement. Features a clean, professional design that fosters trust and long-term medical partnerships.'
+    },
+    {
+      title: 'Bakliv',
+      category: 'web',
+      image: Bakliv,
+      description: 'A professional pharmaceutical website showcasing 25 years of expertise and commitment to quality healthcare solutions. Focused on trust, scientific credibility, and easy navigation to highlight reliable, high-quality products.'
+    },
+    {
+      title: 'Kakamani Enterprises',
+      category: 'web',
+      image: Kakamani,
+      description: 'A responsive website highlighting cost-effective, reliable warehouse storage and material handling solutions. Showcases their nationwide reach and customer-focused service through a clean, informative design.'
+    },
+    {
+      title: 'Aadhya Edu',
+      category: 'web',
+      image: AadhyaEdu,
+      description: 'A tech-enabled platform that makes overseas education accessible by helping students and partners find and apply to top global universities. Features a modern, responsive design for easy navigation and user engagement.'
+    },
+    {
+      title: 'Sri Maha Spices',
+      category: 'web',
+      image: SriMaha,
+      description: 'A premium catering website that showcases their five-star expertise and dedication to turning every event into a memorable celebration through refined visuals and seamless user navigation.'
+    },
+    {
+      title: 'Baba Tours And Travels',
+      category: 'web',
+      image: Baba,
+      description: 'A travel services website built to showcase a versatile fleet of vehicles for all occasions—from city tours and school trips to weddings and corporate outings.'
+    },
+    {
+      title: 'Vivenza',
+      category: 'web',
+      image: Vivenza,
+      description: 'A luxury farmhouse website designed to showcase the elegance, comfort, and grandeur of Moinabad’s most premium event destination.'
     },
   ];
 
@@ -210,33 +254,6 @@ const Projects = () => {
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
                     {project.description}
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <a
-                      href={project.link}
-                      target='_blank'
-                      className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 flex items-center gap-2"
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                      Live Demo
-                    </a>
-                    {/* <a
-                      href={project.github}
-                      className="text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 flex items-center gap-2"
-                    >
-                      <Github className="w-4 h-4" />
-                      Source
-                    </a> */}
-                  </div>
                 </div>
               </motion.div>
             ))}

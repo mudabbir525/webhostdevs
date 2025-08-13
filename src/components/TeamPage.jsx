@@ -5,21 +5,34 @@ import { Mail, Linkedin } from 'lucide-react';
 
 import { useLocation } from 'react-router-dom';
 
-import sohail from '../assets/sohail.webp';
-import siddesh from '../assets/siddesh.jpg';
-import bharadwaj from '../assets/bharadwaj.jpg';
+import sohail from '../assets/Team/sohail.webp';
+import siddesh from '../assets/Team/siddesh.jpg';
+import bharadwaj from '../assets/Team/bharadwaj.jpg';
 
-import adithya from '../assets/adithya.webp';
-import afshan from '../assets/afshan.webp';
-import akshat from '../assets/akshat.webp';
-import nirvignya from '../assets/nirvignya.webp';
-import sirichandana from '../assets/sirichandana.webp';
-import srinidhi from '../assets/srinidhi.webp';
-import vishal from '../assets/vishal.webp';
-import vennela from '../assets/vennela.webp';
-import kc from '../assets/kc.webp';
-import abhi from '../assets/abhi.jpg';
-import rahul from '../assets/rahul.jpeg';
+import adithya from '../assets/Team/adithya.webp';
+import afshan from '../assets/Team/afshan.webp';
+import akshat from '../assets/Team/akshat.webp';
+import nirvignya from '../assets/Team/nirvignya.webp';
+import sirichandana from '../assets/Team/sirichandana.webp';
+import srinidhi from '../assets/Team/srinidhi.webp';
+import vishal from '../assets/Team/vishal.webp';
+import vennela from '../assets/Team/vennela.webp';
+import kc from '../assets/Team/kc.webp';
+import abhi from '../assets/Team/abhi.jpg';
+import rahul from '../assets/Team/rahul.jpeg';
+import harshita from '../assets/Team/harshita.jpeg';
+import ashrith from '../assets/Team/ashrith.jpg';
+import rakesh from '../assets/Team/rakesh.jpeg';
+import nitin from '../assets/Team/nitin.jpeg';
+import prem from '../assets/Team/prem.jpeg';
+import yagna from '../assets/Team/yagna.jpeg';
+import rupa from '../assets/Team/rupa.jpg';
+import karthik from '../assets/Team/karthik.png';
+import varun from '../assets/Team/varun.png';
+import hasini from '../assets/Team/hasini.jpg';
+import sadhik from '../assets/Team/sadhik.jpg';
+import vivek from '../assets/Team/vivek.jpg';
+import kiran from '../assets/Team/kiran.png';
 
 import { Link } from "react-router-dom";
 
@@ -113,7 +126,141 @@ const TeamPage = () => {
       image : vennela
 
     },
-  
+    {
+      name: "Karthikeya Naik",
+      role: "Full Stack Developer (Intern)",
+      description: "Builds and maintains web applications    across the full technology stack. Implements features and fixes bugs under senior developer guidance.",
+      email: "banothkarthik8@gmail.com",
+      linkedin: "https://www.linkedin.com/in/karthikeyanaik/",
+      image : karthik
+
+    },
+    {
+      name: "Rupa Samala",
+      role: "Full Stack Developer (Intern)",
+      description: "Builds and maintains web applications    across the full technology stack. Implements features and fixes bugs under senior developer guidance.",
+      email: "rupasamala87@gmail.com",
+      linkedin: "https://www.linkedin.com/in/rupa-samala-041590271/",
+      image : rupa
+
+    },
+    {
+      name: "Varunkanth Sanchu",
+      role: "Full Stack Developer (Intern)",
+      description: "Builds and maintains web applications    across the full technology stack. Implements features and fixes bugs under senior developer guidance.",
+      email: "varunsunchu59@gmail.com",
+      linkedin: "https://www.linkedin.com/in/varunkanth059/",
+      image : varun
+
+    },
+    {
+      name: "Nitin Kakumanu",
+      role: "Full Stack Developer (Intern)",
+      description: "Builds and maintains web applications    across the full technology stack. Implements features and fixes bugs under senior developer guidance.",
+      email: "nitinkakumanu@gmail.com",
+      linkedin: "https://www.linkedin.com/in/nitin-kakumanu-92b88a27b/",
+      image : nitin
+
+    },
+    {
+      name: "Rakesh Mulpuri",
+      role: "Full Stack Developer (Intern)",
+      description: "Builds and maintains web applications    across the full technology stack. Implements features and fixes bugs under senior developer guidance.",
+      email: "mulpurirakesh05@gmail.com",
+      linkedin: "https://www.linkedin.com/in/rakesh-mulpuri-a8706b255/",
+      image : rakesh
+
+    },
+    {
+      name: "Nirvignya Ageer",
+      role: "Full Stack Developer (Intern)",
+      description: "Builds and maintains web applications    across the full technology stack. Implements features and fixes bugs under senior developer guidance.",
+      email: "ageernirvignya@gmail.com",
+      linkedin: "https://www.linkedin.com/in/nirvignya-ageer-694a65317/",
+      image : nirvignya
+
+    },
+    {
+      name: "Prem Podara",
+      role: "Full Stack Developer (Intern)",
+      description: "Builds and maintains web applications    across the full technology stack. Implements features and fixes bugs under senior developer guidance.",
+      email: "20027cm044@gmail.com",
+      linkedin: "https://www.linkedin.com/in/premgoud-podara-842733274/",
+      image : prem
+
+    },
+    {
+      name: "Harshita Bingi",
+      role: "Business Development Lead",
+      description: "Drives growth by identifying new business opportunities, building client relationships, and developing strategic partnerships. Collaborates with sales and marketing teams.",
+      email: "harshitabingi@gmail.com",
+      linkedin: "https://www.linkedin.com/in/harshita-bingi/",
+      image : harshita
+
+    },
+    {
+      name: "Hasini Palreddy",
+      role: "Business Developer (Intern)",
+      description: " Assists in lead generation, market analysis, and tracking sales efforts. Works with cross-functional teams to support partnership development and strategic initiatives.",
+      email: "palreddyhasini@gmail.com",
+      linkedin: "https://www.linkedin.com/in/hasinipalreddy/",
+      image : hasini
+
+    },
+    {
+      name: "Sadhik Shaik",
+      role: "Business Development (Intern)",
+      description: "Assists in lead generation, market analysis, and tracking sales efforts. Works with cross-functional teams to support partnership development and strategic initiatives.",
+      email: "sadhikshaik9618@gmail.com",
+      linkedin: "https://www.linkedin.com/in/sadhik-shaik-1878b8312/",
+      image : sadhik
+
+    },
+    {
+      name: "Sai Kiran Jagiri",
+      role: "Business Development(Intern)",
+      description: " Assists in lead generation, market analysis, and tracking sales efforts. Works with cross-functional teams to support partnership development and strategic initiatives.",
+      email: "jagirisaikiran2004@gmail.com",
+      linkedin: "https://www.linkedin.com/in/saikirangoudjagiri/",
+      image : kiran
+
+    },
+    {
+      name: "Afshan Mohammed",
+      role: "UI/UX Designer (Intern)",
+      description: "Supports the UI/UX team in user research, wireframing, prototyping, and usability testing. Collaborates with designers and developers to enhance user experience and ensure design consistency across products.",
+      email: "mohammadafshan323@gmail.com",
+      linkedin: "https://www.linkedin.com/in/mohammed-afshan-b188b8276/",
+      image : afshan
+
+    },
+    {
+      name: "Ashrith Guttula",
+      role: "UI/UX Designer (Intern)",
+      description: "Supports the UI/UX team in user research, wireframing, prototyping, and usability testing. Collaborates with designers and developers to enhance user experience and ensure design consistency across products.",
+      email: "ashrith.g.8704@gmail.com",
+      linkedin: "https://www.linkedin.com/in/ashrit-guttula",
+      image : ashrith
+
+    },
+    {
+      name: "Vivek Begari",
+      role: "UI/UX Designer (Intern)",
+      description: "Supports the UI/UX team in user research, wireframing, prototyping, and usability testing. Collaborates with designers and developers to enhance user experience and ensure design consistency across products.",
+      email: "begarivivek630@gmail.com",
+      linkedin: "https://www.linkedin.com/in/begarivivek/",
+      image : vivek
+
+    },
+    {
+      name: "Yagnasri Padma Akula",
+      role: "FrontEnd Developer (Intern)",
+      description: "Assists in developing and maintaining user-facing features for web applications using HTML, CSS, and JavaScript. Works closely with designers and backend developers to implement responsive and interactive interfaces.",
+      email: "yagnasri@webhostdevs.com",
+      linkedin: "https://www.linkedin.com/in/yagnasri-akula-860039298/",
+      image : yagna
+
+    },
 
   ];
 
