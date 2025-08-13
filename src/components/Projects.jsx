@@ -34,8 +34,6 @@ const Projects = () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }, [location]);
 
-  const [filter, setFilter] = useState('all');
-
   const projects = [
     {
       title: 'Mahaspice',
@@ -127,7 +125,7 @@ const Projects = () => {
       title: 'Interior Vision',
       category: 'web',
       image: InteriorVision,
-      description: 'A sleek, modern website showcasing interior design services, portfolios, and inspiration. Features elegant visuals and responsive layouts to engage clients and highlight the brand’s aesthetic.'
+      description: 'A sleek, modern website showcasing interior design services, portfolios, and inspiration. Features elegant visuals and responsive layouts to engage clients and highlight the brand aesthetic.'
     },
     {
       title: 'Gastro Nova',
@@ -169,20 +167,9 @@ const Projects = () => {
       title: 'Vivenza',
       category: 'web',
       image: Vivenza,
-      description: 'A luxury farmhouse website designed to showcase the elegance, comfort, and grandeur of Moinabad’s most premium event destination.'
+      description: 'A luxury farmhouse website designed to showcase the elegance, comfort, and grandeur of Moinabad most premium event destination.'
     },
   ];
-
-  const categories = [
-    { id: 'all', label: 'All Projects' },
-    { id: 'web', label: 'Web Apps' },
-    // { id: 'mobile', label: 'Mobile Apps' },
-    { id: 'dashboard', label: 'Dashboards' }
-  ];
-
-  const filteredProjects = filter === 'all' 
-    ? projects 
-    : projects.filter(project => project.category === filter);
 
   return (
     <div className="pt-16 min-h-screen bg-gray-50 dark:bg-gray-900">
@@ -207,32 +194,14 @@ const Projects = () => {
         </div>
       </section>
 
-      {/* Filter Buttons */}
+      {/* Projects Grid */}
       <div className="max-w-7xl mx-auto px-4 py-8">
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {categories.map((category) => (
-            <motion.button
-              key={category.id}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => setFilter(category.id)}
-              className={`px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200 
-                ${filter === category.id 
-                  ? 'bg-blue-600 text-white' 
-                  : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'}`}
-            >
-              {category.label}
-            </motion.button>
-          ))}
-        </div>
-
-        {/* Projects Grid */}
         <motion.div 
           layout
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           <AnimatePresence>
-            {filteredProjects.map((project) => (
+            {projects.map((project) => (
               <motion.div
                 key={project.title}
                 layout
