@@ -24,6 +24,8 @@ import Vivenza from '../assets/Vivenza.png'
 import Bakliv from '../assets/Bakliv.png'
 import Baba from '../assets/Baba.png'
 import AadhyaEdu from '../assets/AadhyaEdu.png'
+import Veena from '../assets/Veena.png'
+import Infinity from '../assets/Infinity.png'
 
 
 
@@ -168,6 +170,18 @@ const Projects = () => {
       category: 'web',
       image: Vivenza,
       description: 'A luxury farmhouse website designed to showcase the elegance, comfort, and grandeur of Moinabad most premium event destination.'
+    },
+    {
+      title: 'Veena Art Studios',
+      category: 'web',
+      image: Veena,
+      description: 'Veena Art Studio is a creative hub offering expert-led art classes and hands-on guidance for learners of all levels. It nurtures artistic growth through a supportive environment where passion and creativity flourish.'
+    },
+    {
+      title: 'Infinity Techno Solutions',
+      category: 'web',
+      image: Infinity,
+      description: 'Infinity Techno Solutions offers professional CCTV installation and customized surveillance systems for residential and commercial security.'
     },
   ];
 
